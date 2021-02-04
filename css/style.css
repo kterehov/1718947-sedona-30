@@ -1,19 +1,19 @@
 :root {
-  --bg-color:#888888;
-  --first-dark:#000000;
-  --first-extra-dark:#333333;
-  --first-light-dark:#666666;
-  --second-dark:#5496BD;
-  --second-extra-dark:#669EC0;
-  --second-light-dark:#81B3D2;
-  --third-dark:#503E33;
-  --third-extra-dark:#604E43;
-  --third-light-dark:#766357;
-  --fourth-light:#E5E5E5;
-  --fourth-light-dark:#F2F2F2;
-  --fourth-dark:#EBEBEB;
+  --bg-color: #888888;
+  --first-dark: #000000;
+  --first-extra-dark: #333333;
+  --first-light-dark: #666666;
+  --second-dark: #5496BD;
+  --second-extra-dark: #669EC0;
+  --second-light-dark: #81B3D2;
+  --third-dark: #503E33;
+  --third-extra-dark: #604E43;
+  --third-light-dark: #766357;
+  --fourth-light: #E5E5E5;
+  --fourth-light-dark: #F2F2F2;
+  --fourth-dark: #EBEBEB;
   --fifth-color: #FFFFFF;
-  --sixth-color:#A9A9A9;
+  --sixth-color: #A9A9A9;
   --seventh-color: #6A6A6A;
   --eighth-color: #CACACA;
   --ninth-color: #EEEEEE;
@@ -47,15 +47,15 @@ ul {
   min-width: 1200px;
 }
 
-.main-list a{
+.main-list a {
   color: var(--first-dark);
 }
 
-.main-list a:hover{
+.main-list a:hover {
   color: var(--second-light-dark);
 }
 
-.main-list a:active{
+.main-list a:active {
   color: var(--first-dark);
   opacity: 0.3;
 }
@@ -64,12 +64,12 @@ ul {
   text-align: center;
 }
 
-.promo-slider div{
+.promo-slider div {
   background: url("../img/logo/promo-bottom.png") no-repeat center bottom;
   height: inherit;
 }
 
-.promo-slider{
+.promo-slider {
   background: url("../img/logo/promo-index.jpg") no-repeat;
   height: 509px;
 }
@@ -114,23 +114,23 @@ ul {
   line-height: 21px;
 }
 
-.promo-list span{
+.promo-list span {
   font-size: 21px;
   font-weight: 700;
 }
 
-.promo-list p{
+.promo-list p {
   font-size: 14px;
   font-weight: 400;
 }
 
-.bg-light{
+.bg-light {
   background: var(--second-light-dark);
   color: var(--fifth-color);
 }
 
-.bg-dark{
- background: var(--ninth-color);
+.bg-dark {
+  background: var(--ninth-color);
   color: var(--first-dark);
 }
 
@@ -194,7 +194,7 @@ ul {
 }
 
 .find-form input[type="date"],
-.find-form input[type="number"]{
+.find-form input[type="number"] {
   background: var(--fourth-light-dark);
   font-weight: 700;
   font-size: 14px;
@@ -202,12 +202,12 @@ ul {
 }
 
 .find-form input[type="date"]:hover,
-.find-form input[type="number"]:hover{
+.find-form input[type="number"]:hover {
   background: var(--fourth-dark);
 }
 
 .find-form input[type="date"]:focus,
-.find-form input[type="number"]:focus{
+.find-form input[type="number"]:focus {
   border: 2px solid var(--fourth-light);
   background: var(--fifth-color);
 }
@@ -222,7 +222,7 @@ ul {
 }
 
 .footer-company a:hover,
-.footer-company a:focus{
+.footer-company a:focus {
   text-decoration: none;
 }
 
