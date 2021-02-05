@@ -1,5 +1,4 @@
 :root {
-
   /**
   Color
    */
@@ -20,6 +19,7 @@
   --seventh-color: #6A6A6A;
   --eighth-color: #CACACA;
   --ninth-color: #EEEEEE;
+  --tenth-color: rgba(255, 255, 255, 0.3);
 
   /**
   Font
@@ -133,13 +133,13 @@ ul {
 .promo-article h3 {
   font-size: var(--font-size-fourth);
   font-weight: var(--font-weight-bold);
-  line-height: 21px
+  line-height: var(--font-height-third);
 }
 
-.promo-article span, .promo-article p {
+.promo-article .promo-number, .promo-article p {
   font-size: var(--font-size-second);
   font-weight: var(--font-weight-normal);
-  line-height: 21px
+  line-height: var(--font-height-third);
 }
 
 .header-hidden {
@@ -191,7 +191,7 @@ ul {
 
 .button-dark:active {
   background: var(--third-dark);
-  color: rgba(255, 255, 255, 0.3)
+  color: var(--tenth-color);
 }
 
 .promo-text-map {
@@ -226,7 +226,7 @@ ul {
 
 .button-light:active {
   background: var(--second-dark);
-  color: rgba(255, 255, 255, 0.3)
+  color: var(--tenth-color);
 }
 
 .find-form input[type="date"],
@@ -319,7 +319,7 @@ ul {
   color: var(--first-dark);
 }
 
-.sort-wrap span {
+.sort-wrap .sort-head {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-fourth);
   line-height: var(--font-height-fifth);
@@ -371,12 +371,12 @@ ul {
   fill: var(--second-light-dark);
 }
 
-.catalog-items {
+.catalog-list {
   padding: 0;
 }
 
-.catalog-items li {
-  border-bottom: 1px solid var(--fourth-light);;
+.catalog-item {
+  border-bottom: 1px solid var(--fourth-light);
   border-top: 1px solid var(--fourth-light);
 }
 
@@ -414,7 +414,7 @@ ul {
 
 .button-dark:active {
   background: var(--third-dark);
-  color: rgba(255, 255, 255, 0.3)
+  color: var(--tenth-color);
 }
 
 .button-item {
@@ -431,7 +431,7 @@ ul {
   color: var(--first-light-dark);
 }
 
-.item-star{
+.item-star {
   background: url("../img/favicon/star.svg") repeat-x;
 }
 
