@@ -1,5 +1,8 @@
 :root {
-  --bg-color: #888888;
+
+  /**
+  Color
+   */
   --first-dark: #000000;
   --first-extra-dark: #333333;
   --first-light-dark: #666666;
@@ -17,6 +20,31 @@
   --seventh-color: #6A6A6A;
   --eighth-color: #CACACA;
   --ninth-color: #EEEEEE;
+
+  /**
+  Font
+   */
+  --font-weight-bold:700;
+  --font-weight-normal:400;
+
+ /**
+  Font size
+   */
+  --font-size-first: 12px;
+  --font-size-second: 14px;
+  --font-size-third: 16px;
+  --font-size-fourth: 21px;
+  --font-size-fifth: 30px;
+
+  /**
+ Font line height
+  */
+  --font-height-first: 18px;
+  --font-height-second: 19px;
+  --font-height-third: 21px;
+  --font-height-fourth: 24px;
+  --font-height-fifth: 26px;
+
 }
 
 a {
@@ -34,34 +62,36 @@ ul {
 
 .page {
   font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  background: var(--bg-color);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-fifth);
+  font-weight: var(--font-weight-normal);
+  background: var(--fourth-light-dark);
   color: var(--first-dark);
   text-transform: uppercase;
 }
 
 .wrap {
+  margin: 0 auto;
   background: var(--fifth-color);
   min-width: 1200px;
+  max-width: 1200px;
 }
 
-.main-list a {
+.nav-link {
   color: var(--first-dark);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
-.main-list a:hover {
+.nav-link:hover {
   color: var(--second-light-dark);
 }
 
-.main-list a:active {
+.nav-link:active {
   color: var(--first-dark);
   opacity: 0.3;
 }
 
-.main-list a.active {
+.nav-link.active {
   color: var(--third-light-dark);
   opacity: 0.3;
 }
@@ -81,8 +111,8 @@ ul {
 }
 
 .promo-header {
-  font-weight: 700;
-  font-size: 21px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-fourth);
 }
 
 .promo-causes .promo-text, .promo-header {
@@ -90,9 +120,9 @@ ul {
 }
 
 .promo-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-fifth);
 }
 
 .promo-article {
@@ -101,14 +131,14 @@ ul {
 }
 
 .promo-article h3 {
-  font-size: 21px;
-  font-weight: 700;
+  font-size: var(--font-size-fourth);
+  font-weight: var(--font-weight-bold);
   line-height: 21px
 }
 
-.promo-article span, p {
-  font-size: 14px;
-  font-weight: 400;
+.promo-article span, .promo-article p {
+  font-size: var(--font-size-second);
+  font-weight: var(--font-weight-normal);
   line-height: 21px
 }
 
@@ -117,17 +147,17 @@ ul {
 }
 
 .promo-list {
-  line-height: 21px;
+  line-height: var(--font-height-third);
 }
 
 .promo-list span {
-  font-size: 21px;
-  font-weight: 700;
+  font-size: var(--font-size-fourth);
+  font-weight: var(--font-weight-bold);
 }
 
 .promo-list p {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: var(--font-size-second);
+  font-weight: var(--font-weight-normal);
 }
 
 .bg-light {
@@ -141,15 +171,15 @@ ul {
 }
 
 .promo-causes h2 {
-  font-size: 30px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: var(--font-size-fifth);
+  line-height: var(--font-height-fourth);
+  font-weight: var(--font-weight-bold);
 }
 
 .header-dark {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+  font-size: var(--font-size-fourth);
+  line-height: var(--font-height-fifth);
+  font-weight: var(--font-weight-bold);
   color: var(--fifth-color);
   background: var(--third-light-dark);
 }
@@ -165,9 +195,9 @@ ul {
 }
 
 .promo-text-map {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
+  font-size: var(--font-size-second);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-height-fourth);
 }
 
 .modal {
@@ -175,15 +205,15 @@ ul {
 }
 
 .find-date {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-fifth);
 }
 
 .button-light {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+  font-size: var(--font-size-fourth);
+  line-height: var(--font-height-fifth);
+  font-weight: var(--font-weight-bold);
   color: var(--fifth-color);
   background: var(--second-light-dark);
   border: 0;
@@ -202,9 +232,9 @@ ul {
 .find-form input[type="date"],
 .find-form input[type="number"] {
   background: var(--fourth-light-dark);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-second);
 }
 
 .find-form input[type="date"]:hover,
@@ -219,16 +249,85 @@ ul {
 }
 
 .footer-company p,
-.footer-company a {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+.link-footer {
+  font-size: var(--font-size-fourth);
+  line-height: var(--font-height-fifth);
+  font-weight: var(--font-weight-bold);
   text-decoration: none;
   color: var(--first-dark);
 }
 
-.footer-company a:hover,
-.footer-company a:focus {
+.link-footer:hover,
+.link-footer:focus {
   text-decoration: none;
+}
+
+.filter-wrap {
+  background: url("../img/logo/promo-index.jpg");
+}
+
+.filter-form legend{
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-third);
+  line-height: var(--font-height-third);
+  color: var(--fifth-color);
+}
+
+.filter-form fieldset {
+  border: 0;
+}
+
+.filter-form label {
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-third);
+  font-weight: var(--font-weight-normal);
+  color: var(--fifth-color);
+}
+
+.form-price label{
+  border: 2px solid var(--fifth-color);
+  box-sizing: border-box;
+  border-radius: 2px;
+  border-right: 0;
+  margin:0;
+}
+
+.form-price input[type="text"] {
+  border: 2px solid var(--fifth-color);
+  border-left:0;
+  background: transparent;
+  color: var(--fifth-color);
+}
+
+.form-price input[type="text"]::placeholder{
+  color: var(--fifth-color);
+}
+
+.filter-button {
+  background: transparent;
+  border: 2px solid var(--fifth-color);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-third);
+  color: var(--fifth-color);
+  text-transform: uppercase;
+}
+
+.filter-button:hover {
+  background: var(--fifth-color);
+  border: 2px solid var(--fifth-color);
+  color: var(--first-dark);
+}
+
+.sort-wrap span{
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-fourth);
+  line-height: var(--font-height-fifth);
+}
+
+.sort-wrap h2{
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-first);
+  line-height: var(--font-height-first);
 }
 
