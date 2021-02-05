@@ -49,6 +49,7 @@ ul {
 
 .main-list a {
   color: var(--first-dark);
+  font-weight: 700;
 }
 
 .main-list a:hover {
@@ -57,6 +58,11 @@ ul {
 
 .main-list a:active {
   color: var(--first-dark);
+  opacity: 0.3;
+}
+
+.main-list a.active {
+  color: var(--third-light-dark);
   opacity: 0.3;
 }
 
