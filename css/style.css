@@ -332,76 +332,73 @@ ul {
 }
 
 .sort-link {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #000000;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-first);
+  line-height: var(--font-height-first);
+  color: var(--first-dark);
   opacity: 0.3;
-  border-bottom: 1px dashed #81B3D2;
+  border-bottom: 1px dashed var(--second-light-dark);
 }
 
 .sort-link:hover {
-  color: #81B3D2;
+  color: var(--second-light-dark);
   opacity: 1;
-  border-bottom: 1px dashed #81B3D2;
+  border-bottom: 1px dashed var(--second-light-dark);
 }
 
 .sort-link:active {
-  color: #000000;
+  color: var(--first-dark);
   opacity: 1;
   border-bottom: 0;
 }
 
 .sort-link-active {
-  color: #81B3D2;
+  color: var(--second-light-dark);
   opacity: 1;
   border-bottom: 0;
 }
 
 .sort-button {
-  fill: #CACACA;
+  fill: var(--eighth-color);
 }
 
 .sort-button:hover {
-  fill: #000000;
+  fill: var(--first-dark);
 }
 
-.sort-button:active {
-  fill: #81B3D2;
-}
-
+.sort-button:active,
 .sort-button-active {
-  fill: #81B3D2;
+  fill: var(--second-light-dark);
 }
 
 .catalog-items {
-  padding: 0px;
+  padding: 0;
 }
 
 .catalog-items li {
-  border-bottom: 1px solid #E5E5E5;
-  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid var(--fourth-light);;
+  border-top: 1px solid var(--fourth-light);
 }
 
 .item-header {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-fourth);
+  line-height: var(--font-height-fifth);
 }
 
 .item-header:hover {
-  color: #81B3D2;
+  color: var(--second-light-dark);
 }
 
 .item-header:active {
-  color: #000000;
+  color: var(--first-dark);
   opacity: 0.3;
 }
 
 .item-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-third);
 }
 
 .button-dark {
@@ -421,17 +418,17 @@ ul {
 }
 
 .button-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-third);
 }
 
 .item-rating {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  background: #F2F2F2;
-  color: #666666;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-second);
+  line-height: var(--font-height-third);
+  background: var(--fourth-light-dark);
+  color: var(--first-light-dark);
 }
 
 .item-star{
