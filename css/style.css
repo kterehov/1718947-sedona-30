@@ -136,7 +136,7 @@ ul {
   line-height: var(--font-height-third);
 }
 
-.promo-article .promo-number, .promo-article p {
+.promo-number, .promo-article p {
   font-size: var(--font-size-second);
   font-weight: var(--font-weight-normal);
   line-height: var(--font-height-third);
