@@ -114,7 +114,7 @@ ul {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-fourth);
   padding-top: 42px;
-  margin:0;
+  margin: 0;
 }
 
 .promo-causes .promo-text, .promo-why-header {
@@ -127,7 +127,7 @@ ul {
   line-height: var(--font-height-fifth);
   padding-top: 48px;
   padding-bottom: 48px;
-  margin:0;
+  margin: 0;
 }
 
 .promo-article {
@@ -155,7 +155,7 @@ ul {
 }
 
 .promo-list {
-  margin:0px;
+  margin: 0px;
   line-height: var(--font-height-third);
 }
 
@@ -421,11 +421,11 @@ ul {
 
 .button-dark-modal {
   width: 568px;
-  line-height:  86px;
+  line-height: 86px;
   display: block;
-  margin-left:auto;
-  margin-right:auto;
-  vertical-align:auto;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: auto;
 }
 
 .button-dark:hover {
@@ -488,7 +488,7 @@ ul {
   grid-template-areas: "text text text image image image image image";
 }
 
-.promo-reverse{
+.promo-reverse {
   grid-template-areas: "image image image image image text text text";
 }
 
@@ -498,24 +498,24 @@ ul {
   justify-content: center;
 }
 
-.promo-list-img{
-  padding-top:60px;
+.promo-list-img {
+  padding-top: 60px;
 }
 
-.promo-list-header{
+.promo-list-header {
   display: block;
-  padding-top:28px;
-  padding-bottom:28px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .promo-list-text {
-  padding-bottom:80px;
+  padding-bottom: 80px;
   margin: 0;
 }
 
 .promo-article-header {
-  padding-top:43px;
-  margin:0;
+  padding-top: 43px;
+  margin: 0;
 }
 
 .promo-number {
@@ -528,13 +528,13 @@ ul {
   padding-bottom: 40px;
 }
 
-.promo-causes-header{
+.promo-causes-header {
   padding-top: 55px;
   margin: 0;
 }
 
 .header-hidden {
- margin: 0;
+  margin: 0;
   visibility: hidden;
 }
 
