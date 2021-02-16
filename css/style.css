@@ -101,7 +101,7 @@ ul {
 }
 
 .promo-slider {
-  background: url("../img/logo/promo-bottom.png") no-repeat center bottom 0, url("../img/logo/promo-index.jpg") no-repeat center 0;
+  background: url("../img/logo/promo-bottom.png") no-repeat center bottom, url("../img/logo/promo-index.jpg") no-repeat center;
   padding-top: 70px;
   padding-bottom: 79px;
 }
