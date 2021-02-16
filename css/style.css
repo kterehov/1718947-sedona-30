@@ -146,7 +146,7 @@ ul {
 
 .promo-number, .promo-article p {
   font-size: var(--font-size-second);
-  font-weight: var(--fonpromo-slidert-weight-normal);
+  font-weight: var(--font-weight-normal);
   line-height: var(--font-height-third);
 }
 
@@ -155,8 +155,8 @@ ul {
 }
 
 .promo-list {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   line-height: var(--font-height-third);
 }
 
