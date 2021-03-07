@@ -20,6 +20,7 @@
   --eighth-color: #CACACA;
   --ninth-color: #EEEEEE;
   --tenth-color: rgba(255, 255, 255, 0.3);
+  --eleventh-color: rgba(255, 255, 255, 0.9);
 
   /**
   Font
@@ -46,7 +47,7 @@
   --font-height-fifth: 26px;
   --font-height-sixth: 37px;
   --font-height-seventh: 48px;
-  --font-height-eighth: 54px;
+  --font-height-eighth: 56px;
 
 }
 
@@ -79,6 +80,7 @@ ul {
   min-width: 1200px;
   max-width: 1200px;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  display: grid;
 }
 
 .nav-link {
@@ -105,19 +107,19 @@ ul {
 
 .promo-slider {
   background: url("../img/logo/promo-bottom.png") no-repeat center bottom, url("../img/logo/promo-index.jpg") no-repeat center;
-  padding-top: 70px;
-  padding-bottom: 79px;
+  padding-top: 76px;
+  padding-bottom: 72px;
 }
 
 .promo-why-header {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-fourth);
-  margin: 0 0 40px 0;
+  margin: 0 0 43px 0;
 }
 
 .promo-header {
-  padding-top: 42px;
-  padding-bottom: 48px;
+  padding-top: 43px;
+  padding-bottom: 52px;
 }
 
 .promo-causes .promo-text, .promo-why-header {
@@ -132,7 +134,7 @@ ul {
 }
 
 .promo-article {
-  padding: 43px 40px 52px 40px;
+  padding: 47px 40px 49px 42px;
 }
 
 .grid-text {
@@ -152,7 +154,16 @@ ul {
 }
 
 .header-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .promo-list {
@@ -210,14 +221,24 @@ ul {
   font-weight: var(--font-weight-normal);
   line-height: var(--font-height-fourth);
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 43px;
 }
 
 .modal {
   background: var(--fifth-color);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
-.find-date {
+.modal-find {
+  width: 568px;
+}
+
+.find-date, .find-adults, .find-children {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-second);
   line-height: var(--font-height-fifth);
@@ -230,6 +251,7 @@ ul {
   color: var(--fifth-color);
   background: var(--second-light-dark);
   border: 0;
+
 }
 
 .button-light:hover {
@@ -242,23 +264,106 @@ ul {
   color: var(--tenth-color);
 }
 
-.find-form input[type="date"],
-.find-form input[type="number"] {
+.button-find {
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+.find-form {
+  display: flex;
+  flex-direction: column;
+  padding:55px;
+}
+
+.find-date {
+  display: flex;
+  padding-top:5px;
+  width: 112px;
+}
+
+.find-adults, .find-children {
+  display: flex;
+  padding-top:6px;
+}
+
+.find-adults {
+  width: 112px;
+}
+
+.find-adults + .find-date-group {
+  justify-content: flex-start;
+}
+
+.find-children + .find-date-group {
+  justify-content: flex-end;
+}
+
+.find-children {
+  margin-left: 40px;
+  flex-grow: 1;
+}
+
+.btn-date {
+  padding: 6px 9px 6px 0px;
+  margin:0;
+  border: 0;
+}
+
+.form-input-date,
+.form-input-number {
   background: var(--fourth-light-dark);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-second);
-  line-height: var(--font-height-second);
+  line-height: 0;
+  border: 0;
+  padding: 0;
+  margin:0;
+  text-transform: uppercase;
 }
 
-.find-form input[type="date"]:hover,
-.find-form input[type="number"]:hover {
+.form-input-date:hover,
+.form-input-number:hover {
   background: var(--fourth-dark);
 }
 
-.find-form input[type="date"]:focus,
-.find-form input[type="number"]:focus {
-  border: 2px solid var(--fourth-light);
+.form-input-date:focus,
+.form-input-number:focus {
   background: var(--fifth-color);
+}
+
+.form-input-date {
+  width: 100%;
+  padding: 6px 0px 8px 13px
+}
+
+.form-input-number {
+  padding: 10px 0px 11px 0px;
+  width: 34px;
+  text-align: center;
+}
+
+.find-date-group {
+  display: flex;
+  flex-grow: 1;
+}
+
+.btn-number {
+  width: 40px;
+  padding: 9px 0px 6px 0px;
+  margin:0;
+  border: 0;
+}
+
+
+.form-find-item {
+  margin-bottom: 29px;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+
+.form-find-item:last-of-type {
+  margin-bottom: 54px;
 }
 
 .footer-company p,
@@ -609,16 +714,16 @@ ul {
 
 .promo-list-item {
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 77px;
 }
 
 .promo-list-img {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .promo-list-header {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .promo-list-text {
@@ -627,12 +732,12 @@ ul {
 
 .promo-article-header {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .promo-number {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .promo-article-text {
@@ -641,7 +746,9 @@ ul {
 
 .promo-causes-header {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
+  padding-right: 10px;
+  font-size: var(--font-size-fifth);
 }
 
 .header-hidden {
@@ -650,13 +757,26 @@ ul {
 }
 
 .promo-modal {
-  padding-top: 55px;
+  padding-top: 59px;
 }
 
 .main-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items:center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 120px;
+  margin-top: -120px;
+  background: var(--eleventh-color);
+  z-index: 100;
+}
+
+.footer-company p {
+  padding: 0px 3px 16px 75px;
+}
+
+.map-container {
+  z-index: 2;
 }
 
 .footer-company {
@@ -669,9 +789,12 @@ ul {
 
 .social-list {
   margin:0;
-  padding:0;
+  padding: 0px 0px 0px 5px;
   display: flex;
+}
 
+.footer-powered {
+  padding: 15px 65px 14px 3px;
 }
 
 .social-item {
@@ -704,14 +827,26 @@ ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .nav-item {
   line-height:var(--font-height-eighth);
+  width: 183px;
+  padding-left: 8px;
 }
 
 .main-header-logo {
   position: absolute;
   width: 138px;
   height: 70px;
+}
+
+.nav-logo {
+  width: 240px;
+  padding-left: 0;
+}
+
+.footer-company p {
+  margin: 0;
 }
