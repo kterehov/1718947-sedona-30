@@ -12,7 +12,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="page-body">
 <div class="wrap">
   <header class="main-header">
     <nav class="main-nav">
@@ -30,23 +30,26 @@
     </nav>
   </header>
   <main class="main-promo">
-    <h1 class="header-hidden">Седона поиск гостиниц</h1>
+    <h1 class="visually-hidden">Седона поиск гостиниц</h1>
     <section class="filter-wrap">
-      <h2 class="header-hidden">Фильтр товаров</h2>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <form method="get" class="grid filter-form" action="https://echo.htmlacademy.ru">
         <fieldset class="form-infrastructure">
           <legend>Инфраструктура:</legend>
           <ul class="form-list">
             <li class="form-item">
-              <input class="filter-input-checkbox" type="checkbox" name="props[1][]" id="filter-props-1-1" checked>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="props[1][]"
+                     id="filter-props-1-1" checked>
               <label for="filter-props-1-1">Бассейн</label>
             </li>
             <li class="form-item">
-              <input class="filter-input-checkbox" type="checkbox" name="props[1][]" id="filter-props-1-2">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="props[1][]"
+                     id="filter-props-1-2">
               <label for="filter-props-1-2">Парковка</label>
             </li>
             <li class="form-item">
-              <input class="filter-input-checkbox" type="checkbox" name="props[1][]" id="filter-props-1-3">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="props[1][]"
+                     id="filter-props-1-3">
               <label for="filter-props-1-3">Wi-Fi</label>
             </li>
           </ul>
@@ -55,15 +58,18 @@
           <legend>Тип жилья:</legend>
           <ul class="form-list">
             <li class="form-item">
-              <input class="filter-input-checkbox" type="checkbox" name="props[2][]" id="filter-props-2-1" checked>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox" name="props[2][]"
+                     id="filter-props-2-1" checked>
               <label for="filter-props-2-1">Гостиница</label>
             </li>
             <li class="form-item">
-              <input class="filter-input-checkbox" type="checkbox" name="props[2][]" id="filter-props-2-2" checked>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox" name="props[2][]"
+                     id="filter-props-2-2" checked>
               <label for="filter-props-2-2">Мотель</label>
             </li>
             <li class="form-item">
-              <input class="filter-input-checkbox" type="checkbox" name="props[2][]" id="filter-props-2-3" checked>
+              <input class="filter-input-checkbox visually-hidden" type="checkbox" name="props[2][]"
+                     id="filter-props-2-3" checked>
               <label for="filter-props-2-3">Апартаменты</label>
             </li>
           </ul>
@@ -71,14 +77,19 @@
         <fieldset class="form-price">
           <legend class="form-price-legend">Стоимость в сутки (р):</legend>
           <div class="form-input-border">
-            <label>ОТ</label>
-            <input class="filter-input-text" type="text" name="min" placeholder="0">
-            <label class="form-input-vertical">ДО</label>
-            <input class="filter-input-text" type="text" name="max" placeholder="3000">
+            <label class="price-min">ОТ
+              <input class="filter-input-text" type="text" name="min" placeholder="0">
+            </label>
+            <label class="price-max form-input-vertical">ДО
+              <input class="filter-input-text" type="text" name="max" placeholder="3000">
+            </label>
           </div>
           <div class="form-price-range">
-            <div></div>
-            <div></div>
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
           </div>
           <div class="form-price-button">
             <button class="filter-button" type="submit">Показать</button>
@@ -88,7 +99,7 @@
     </section>
     <section class="sort-wrap">
       <span class="sort-head">Найдено: 3</span>
-      <div>
+      <div class="sort-type">
         <h2 class="sort-header">Сортировка</h2>
         <ul class="sort-list">
           <li class="sort-item"><a class="sort-link sort-link-active">По цене</a></li>
@@ -110,7 +121,7 @@
       </div>
     </section>
     <section class="catalog-wrap">
-      <h2 class="header-hidden">Товары</h2>
+      <h2 class="visually-hidden">Товары</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <img src="img/content/amara-resort-spa.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
@@ -151,17 +162,18 @@
         </li>
       </ul>
     </section>
+    <div></div>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer catalog-footer">
     <div class="footer-company">
-      <h2 class="header-hidden">Как нас найти</h2>
+      <h2 class="visually-hidden">Как нас найти</h2>
       <p>
         <a class="link-footer">#visitSEDONA</a><br>
         ТЕЛ: <a class="link-footer" href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </div>
     <div class="footer-social">
-      <h2 class="header-hidden">Давайте дружить!</h2>
+      <h2 class="visually-hidden">Давайте дружить!</h2>
       <ul class="social-list">
         <li class="social-item">
           <a href="#" class="button-light social-button"><img class="social-img" src="img/icon/twitter.svg"></a>
