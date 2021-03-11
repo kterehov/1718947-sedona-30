@@ -503,7 +503,7 @@ ul {
 
 .sort-header {
   display: inline-block;
-  margin: 0 39px 0 0;
+  margin: 0 37px 0 0;
 }
 
 .sort-list {
@@ -596,10 +596,10 @@ ul {
 
 .catalog-item {
   display: grid;
-  grid-template-columns: 160px auto 140px;
+  grid-template-columns: 164px auto 140px;
   line-height: 0;
   text-align: left;
-  padding:20px 80px 20px 80px;
+  padding: 29px 72px 30px 73px;
 }
 
 .price-min {
@@ -685,7 +685,7 @@ ul {
 .item-header {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-fourth);
-  line-height: var(--font-height-fifth);
+  line-height: var(--font-height-first);
   display: block;
   margin-bottom: 10px;
 }
@@ -699,12 +699,17 @@ ul {
   opacity: 0.3;
 }
 
+.item-text span:first-of-type {
+  display: inline-block;
+  width: 112px;
+}
+
 .item-text {
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-second);
   line-height: var(--font-height-third);
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .button-dark {
@@ -736,7 +741,7 @@ ul {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-second);
   line-height: var(--font-height-third);
-  padding: 3px 16px 3px 17px
+  padding: 4px 16px 4px 17px
 }
 
 .item-rating {
@@ -749,7 +754,7 @@ ul {
 }
 
 .button-more {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .item-star {
@@ -757,7 +762,7 @@ ul {
   background: url("../img/icon/star.svg") repeat-x;
   height: 17px;
   margin-left: auto;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .item-star-one {
@@ -765,15 +770,15 @@ ul {
 }
 
 .item-star-two {
-  width: 35px;
+  width: 44px;
 }
 
 .item-star-three {
-  width: 55px;
+  width: 68px;
 }
 
 .item-star-four {
-  width: 75px;
+  width: 92px;
 }
 
 .item-star-five {
@@ -790,9 +795,16 @@ ul {
 
 .grid {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.filter-form {
+  display: grid;
   grid-template-columns: 255px 1fr 316px;
   justify-content: center;
 }
+
 
 .form-house {
 
@@ -861,7 +873,7 @@ ul {
 }
 
 .catalog-footer {
-  margin-top: 0px;
+  margin-top: 2px;
 }
 
 .footer-company p {
