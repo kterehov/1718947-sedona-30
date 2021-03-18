@@ -96,7 +96,7 @@ ul {
   color: var(--first-dark);
   font-weight: var(--font-weight-bold);
   line-height: 26px;
-  outline: 0;
+  outline: none;
 }
 
 .nav-link:hover {
@@ -169,7 +169,6 @@ ul {
   line-height: var(--font-height-third);
 }
 
-.header-hidden,
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -514,7 +513,7 @@ ul {
 }
 
 .form-item label {
-  outline: 0;
+  outline: none;
 }
 
 .form-price {
@@ -868,26 +867,6 @@ ul {
   margin-bottom: 50px;
 }
 
-.item-star-one {
-  width: 15px;
-}
-
-.item-star-two {
-  width: 44px;
-}
-
-.item-star-three {
-  width: 68px;
-}
-
-.item-star-four {
-  width: 92px;
-}
-
-.item-star-five {
-  width: 95px;
-}
-
 .promo-why {
   grid-area: why;
 }
@@ -961,7 +940,7 @@ ul {
 }
 
 .promo-causes-header {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 34px;
   padding-right: 10px;
   font-size: var(--font-size-fifth);
@@ -1090,7 +1069,7 @@ ul {
 
 .main-header-logo img {
   outline: 0;
-  border:0;
+  border: 0;
 }
 
 .nav-logo {
