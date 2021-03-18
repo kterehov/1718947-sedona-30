@@ -189,7 +189,7 @@ ul {
   user-select: none;
 }
 
-.filter-input-checkbox:enabled + label::before {
+.filter-input-checkbox:not(:checked):enabled + label::before {
   content: "";
   background: url("../img/icon/checkbox-off.svg") no-repeat no-repeat;
   position: absolute;
@@ -209,7 +209,7 @@ ul {
   border: 0;
 }
 
-.filter-input-checkbox:disabled + label::before {
+.filter-input-checkbox:not(:checked):disabled + label::before {
   content: "";
   background: url("../img/icon/checkbox-off-disabled.svg") no-repeat no-repeat;
   position: absolute;
