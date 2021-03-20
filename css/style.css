@@ -53,21 +53,8 @@
   --font-height-eighth: 56px;
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
-}
-
 .page {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: var(--font-size-second);
   line-height: var(--font-height-fifth);
   font-weight: var(--font-weight-normal);
@@ -96,6 +83,7 @@ ul {
   color: var(--first-dark);
   font-weight: var(--font-weight-bold);
   line-height: 26px;
+  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -237,6 +225,7 @@ ul {
   padding: 0;
   margin: 0;
   line-height: var(--font-height-third);
+  list-style: none;
 }
 
 .promo-list span {
@@ -271,6 +260,7 @@ ul {
   font-weight: var(--font-weight-bold);
   color: var(--fifth-color);
   background: var(--third-light-dark);
+  text-decoration: none;
 }
 
 .button-dark:hover,
@@ -365,6 +355,7 @@ ul {
   color: var(--fifth-color);
   background: var(--second-light-dark);
   border: 0;
+  text-decoration: none;
 }
 
 .button-light:hover,
@@ -609,11 +600,9 @@ ul {
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-first);
   line-height: var(--font-height-first);
-}
-
-.sort-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .sort-item {
@@ -683,6 +672,7 @@ ul {
 
 .sort-button {
   fill: var(--eighth-color);
+  text-decoration: none;
 }
 
 .sort-button:active,
@@ -744,6 +734,7 @@ ul {
 .form-list {
   padding: 0 0 0 41px;
   margin: 0;
+  list-style: none;
 }
 
 .form-price input[type="text"] {
@@ -778,6 +769,7 @@ ul {
 .catalog-list {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .catalog-item {
@@ -794,6 +786,7 @@ ul {
   margin-top: -5px;
   vertical-align: middle;
   padding: 0;
+  text-decoration: none;
 }
 
 .item-header:hover,
@@ -865,6 +858,7 @@ ul {
 
 .button-more {
   margin-right: 2px;
+  text-decoration: none;
 }
 
 .item-star {
@@ -992,6 +986,7 @@ ul {
   padding: 0 0 0 5px;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .footer-powered {
@@ -1017,6 +1012,7 @@ ul {
 
 .link-academy {
   margin: 0 0 0 8px;
+  text-decoration: none;
 }
 
 .link-academy:hover path,
@@ -1037,6 +1033,7 @@ ul {
 .nav-list {
   padding: 0 72px;
   align-items: center;
+  list-style: none;
 }
 
 .nav-list {
@@ -1074,6 +1071,7 @@ ul {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  text-decoration: none;
 }
 
 .main-header-logo img {
